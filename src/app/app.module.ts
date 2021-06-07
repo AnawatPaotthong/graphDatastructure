@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { GraphComponent } from './components/graph/graph.component';
 import { NgxGraphComponent } from './components/ngx-graph/ngx-graph.component';
 import { NgxGraphModule } from '@swimlane/ngx-graph';
+import { EduGraphComponent } from './components/edu-graph/edu-graph.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GraphComponent,
-    NgxGraphComponent
+    NgxGraphComponent,
+    EduGraphComponent
   ],
   imports: [
     BrowserModule,
