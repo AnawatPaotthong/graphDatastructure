@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NodePosition } from '@swimlane/ngx-graph';
 import { Subject } from 'rxjs'; 
 
 @Component({
@@ -9,6 +10,7 @@ import { Subject } from 'rxjs';
 export class GraphComponent implements OnInit {
   center$: Subject<boolean> = new Subject();
   zoomToFit$: Subject<boolean> = new Subject();
+  
 
   constructor() { }
 
@@ -22,6 +24,10 @@ export class GraphComponent implements OnInit {
 
   fitGraph() {
     this.zoomToFit$.next(true)
+  }
+
+  nodeClick(node: any){
+    console.log(node.label);
   }
 
 }
