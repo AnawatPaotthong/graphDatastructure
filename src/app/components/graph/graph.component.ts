@@ -1,29 +1,70 @@
-import { Component, OnInit } from '@angular/core';
-import { NodePosition } from '@swimlane/ngx-graph';
-import { Subject } from 'rxjs'; 
+import { Component, Input, OnInit } from '@angular/core';
+import { Edge, NodePosition, Node, Layout } from '@swimlane/ngx-graph';
+
 
 @Component({
   selector: 'app-graph',
   templateUrl: './graph.component.html',
   styleUrls: ['./graph.component.css']
 })
-export class GraphComponent implements OnInit {
-  center$: Subject<boolean> = new Subject();
-  zoomToFit$: Subject<boolean> = new Subject();
-  
 
-  constructor() { }
+export class GraphComponent implements OnInit {
+  public nodes: Node[] = [
+    {
+      id: 'first',
+      label: 'IT',
+      position: {
+        x: 100,
+        y: 0,
+      }
+    },
+    {
+      id: 'second',
+      label: 'Person',
+      position: {
+        x: 0,
+        y: 0,
+      }
+    },
+    {
+      id: 'third',
+      label: 'Plan',
+      position: {
+        x: 0,
+        y: 0,
+      }
+    },
+    {
+      id: 'fourth',
+      label: 'Money',
+      position: {
+        x: 0,
+        y: 0,
+      }
+    }
+  ];
+
+  public links: Edge[] = [
+    {
+      id: 'a',
+      source: 'first',
+      target: 'second'
+    },{
+      id: 'a',
+      source: 'first',
+      target: 'third'
+    },{
+      id: 'a',
+      source: 'first',
+      target: 'fourth'
+    },
+  ];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
 
-  }
-
-  centerGraph() {
-    this.center$.next(true)
-  }
-
-  fitGraph() {
-    this.zoomToFit$.next(true)
   }
 
   nodeClick(node: any){
