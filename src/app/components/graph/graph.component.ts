@@ -22,7 +22,7 @@ export class GraphComponent implements OnInit {
       id: 'second',
       label: 'Person',
       position: {
-        x: 0,
+        x: 100,
         y: 0,
       }
     },

@@ -8,6 +8,8 @@ import { NgxGraphComponent } from './components/ngx-graph/ngx-graph.component';
 import { NgxGraphModule } from '@swimlane/ngx-graph';
 import { EduGraphComponent } from './components/edu-graph/edu-graph.component';
 import { ResearchGraphComponent } from './components/research-graph/research-graph.component';
+import { TestGraphComponent } from './components/test-graph/test-graph.component';
+import { GraphVisDirective } from './components/test-graph/graphvis.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ResearchGraphComponent } from './components/research-graph/research-gra
     GraphComponent,
     NgxGraphComponent,
     EduGraphComponent,
-    ResearchGraphComponent
+    ResearchGraphComponent,
+    TestGraphComponent,
+    GraphVisDirective
   ],
   imports: [
     BrowserModule,
