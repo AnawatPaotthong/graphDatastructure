@@ -3,28 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GraphComponent } from './components/graph/graph.component';
-import { NgxGraphComponent } from './components/ngx-graph/ngx-graph.component';
-import { NgxGraphModule } from '@swimlane/ngx-graph';
-import { EduGraphComponent } from './components/edu-graph/edu-graph.component';
-import { ResearchGraphComponent } from './components/research-graph/research-graph.component';
 import { TestGraphComponent } from './components/test-graph/test-graph.component';
 import { GraphVisDirective } from './components/test-graph/graphvis.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GraphComponent,
-    NgxGraphComponent,
-    EduGraphComponent,
-    ResearchGraphComponent,
     TestGraphComponent,
-    GraphVisDirective
+    GraphVisDirective,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxGraphModule
   ],
   providers: [],
   bootstrap: [AppComponent]
