@@ -17,7 +17,7 @@ export class TestGraphComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
     var nodes = new DataSet([
-      { id: '01', label: 'การเรียนการสอน', fixed: false, x: 300, y: 100, shape: 'box', physics: false},
+      { id: '01', label: 'การเรียนการสอน', fixed: false, x: 300, y: 100, shape: 'box'},
       { id: '01-01', label: 'ช่วยเหลือ COVID-19', fixed: true, x: 150, y: 130 },
       { id: '01-01-T', label: '(1.11),(1.12)', fixed: true, x: 150, y: 150, shape: 'text' },
       { id: '01-02', label: 'มาตรฐาน+คุณภาพ', fixed: true, x: 136, y: 74 },
@@ -47,7 +47,7 @@ export class TestGraphComponent implements OnInit {
       { id: '03-01-01', label: 'เพิ่ม Project', fixed: true, x: 900, y: -50 },
       { id: '04', label: 'ด้านบริหารจัดการ', fixed: true, x: 400, y: 250, shape: 'box' },
       { id: '04-01', label: 'กลยุทธ์', fixed: true, x: 600, y: 200, shape: 'box' },
-      { id: '04-02', label: 'แผน', fixed: true, x: 600, y: 250 },
+      { id: '04-02', label: 'แผน', fixed: true, x: 600, y: 250, color: {border: '#0000FF'} },
       { id: '04-03', label: 'คน', fixed: true, x: 400, y: 300 },
       { id: '04-04', label: 'IT', fixed: true, x: 600, y: 350 },
       { id: '04-05', label: 'เงิน', fixed: true, x: 800, y: 300 },
