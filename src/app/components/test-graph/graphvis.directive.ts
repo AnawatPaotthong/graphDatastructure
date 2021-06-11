@@ -33,8 +33,17 @@ export class GraphVisDirective {
       },
       groups: {
         mainNodes:{
-          color: { border: '#ff0000', background: '#ffcccc', highlight: { border: '#cc0088', background: '#ffcccc' } }, font: { color: '#660066', size: 30, face: 'Angsana New' }, margin:{ top: 15, right: 15, left: 15, bottom: 15}
+          color: { border: '#ff0000', background: '#ffcccc', highlight: { border: '#cc0088', background: '#ffcccc' } }, font: { color: '#660066', size: 28, face: 'TH SarabunPSK' }, margin:{ top: 15, right: 15, left: 15, bottom: 15}
         },
+        secondaryNodes:{
+          color: { border: '#ff0000', background: '#ffd1b3', highlight: { border: '#ff0000', background: '#ffd1b3' } }, font: { color: '#331400', size: 20, face: 'TH SarabunPSK' }
+        },
+        secondaryNodes1:{
+          color: { border: '#ff0000', background: '#00cc00', highlight: { border: '#ff0000', background: '#00cc00' } }, font: { color: '#000000', size: 20, face: 'TH SarabunPSK' }
+        },
+        secondaryNodes2:{
+          color: { border: '#ff0000', background: '#c2f0c2', highlight: { border: '#ff0000', background: '#c2f0c2' } }, font: { color: '#051405', size: 20, face: 'TH SarabunPSK' }
+        }
       },
     };
 
