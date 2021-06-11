@@ -17,7 +17,7 @@ export class TestGraphComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
     var nodes = new DataSet([
-      { id: '01', label: 'การเรียนการสอน', fixed: false, x: 100, y: 150, shape: 'box', color: { border: '#ff0000', background: '#ffcccc', highlight: { border: '#ff0000', background: '#ffcccc' } }, font: { color: '#660066', size: 30, face: 'Angsana New' } },
+      { id: '01', label: 'การเรียนการสอน', fixed: true, x: 100, y: 100, shape: 'box', group: 'mainNodes' },
       { id: '01-01', label: 'ช่วยเหลือ COVID-19', fixed: true, x: -150, y: 100, color: { border: '#ff0000', background: '#ffffff', highlight: { border: '#ff0000', background: '#ffffff' } }, font: { color: '#cc0000', size: 24, face: 'Angsana New' } },
       { id: '01-01-T', label: '(1.11),(1.12)', fixed: true, x: -150, y: 160, shape: 'text' },
       { id: '01-02', label: 'มาตรฐาน+คุณภาพ', fixed: true, x: -150, y: 1, color: { border: '#ff0000', background: '#b8b894', highlight: { border: '#ff0000', background: '#b8b894' } }, font: { color: '#000000', size: 24, face: 'Angsana New' } },
@@ -33,7 +33,7 @@ export class TestGraphComponent implements OnInit {
       { id: '01-06', label: 'MC+บัณฑิตพันธุ์ใหม่', fixed: true, x: 450, y: 27, color: { border: '#ff0000', background: '#ffd1b3', highlight: { border: '#ff0000', background: '#ffd1b3' } }, font: { color: '#331400', size: 24, face: 'Angsana New' } },
       { id: '01-06-01', label: 'โครงการรัฐ', fixed: true, x: 494, y: -122, color: { border: '#ff0000', background: '#00cc00', highlight: { border: '#ff0000', background: '#00cc00' } }, font: { color: '#000000', size: 24, face: 'Angsana New' } },
       { id: '01-07', label: 'นวัตกรรม', fixed: true, x: 450, y: 100, color: { border: '#ff0000', background: '#c2f0c2', highlight: { border: '#ff0000', background: '#c2f0c2' } }, font: { color: '#051405', size: 24, face: 'Angsana New' } },
-      { id: '02', label: 'การวิจัย', fixed: true, x: 800, y: 100, shape: 'box', color: { border: '#ff0000', background: '#ffcccc', highlight: { border: '#ff0000', background: '#ffcccc' } }, font: { color: '#660066', size: 30, face: 'Angsana New' } },
+      { id: '02', label: 'การวิจัย', fixed: true, x: 800, y: 100, shape: 'box', group: 'mainNodes'},
       { id: '02-01', label: 'ขยายฐาน', fixed: true, x: 800, y: 11, color: { border: '#ff0000', background: '#ffffb3', highlight: { border: '#ff0000', background: '#ffffb3' } }, font: { color: '#cc0000', size: 24, face: 'Angsana New' } },
       { id: '02-01-01', label: 'นักศึกษา', fixed: true, x: 600, y: 52, color: { border: '#ff0000', background: '#ffffb3', highlight: { border: '#ff0000', background: '#ffffb3' } }, font: { color: '#cc0000', size: 24, face: 'Angsana New' } },
       { id: '02-01-02', label: 'Project', fixed: true, x: 950, y: 25, color: { border: '#ff0000', background: '#ffffb3', highlight: { border: '#ff0000', background: '#ffffb3' } }, font: { color: '#cc0000', size: 24, face: 'Angsana New' } },
@@ -42,7 +42,7 @@ export class TestGraphComponent implements OnInit {
       { id: '02-01-04-01', label: 'เพิ่ม Project', fixed: true, x: 900, y: -250, color: { border: '#ff0000', background: '#d1d1e0', highlight: { border: '#ff0000', background: '#d1d1e0' } }, font: { color: '#e62e00', size: 24, face: 'Angsana New' } },
       { id: '02-01-04-01-01', label: 'Bigger Income/Project', fixed: true, x: 1100, y: -185, color: { border: '#ff0000', background: '#f0f0f5', highlight: { border: '#ff0000', background: '#f0f0f5' } }, font: { color: '#000000', size: 24, face: 'Angsana New' } },
       { id: '02-01-04-02', label: 'ชื่อเสียงและความสามารถในการแข่งขัน', fixed: true, x: 950, y: -80, color: { border: '#ff0000', background: '#ffffff', highlight: { border: '#ff0000', background: '#ffffff' } }, font: { color: '#cc0000', size: 24, face: 'Angsana New' } },
-      { id: '03', label: 'การบริการวิชาการ', fixed: true, x: 1200, y: 100, shape: 'box', color: { border: '#ff0000', background: '#ffcccc', highlight: { border: '#ff0000', background: '#ffcccc' } }, font: { color: '#660066', size: 30, face: 'Angsana New' } },
+      { id: '03', label: 'การบริการวิชาการ', fixed: true, x: 1200, y: 100, shape: 'box', group: 'mainNodes' },
       { id: '03-01', label: 'เพิ่ม Partners', fixed: true, x: 1200, y: 25, color: { border: '#ff0000', background: '#ffff99', highlight: { border: '#ff0000', background: '#ffff99' } }, font: { color: '#666699', size: 24, face: 'Angsana New' } },
       { id: '03-01-01', label: 'เพิ่ม Project', fixed: true, x: 1200, y: -50, color: { border: '#ff0000', background: '#d1d1e0', highlight: { border: '#ff0000', background: '#d1d1e0' } }, font: { color: '#e62e00', size: 24, face: 'Angsana New' } },
       { id: '04', label: 'ด้านบริหารจัดการ', fixed: true, x: 400, y: 250, shape: 'box', color: { border: '#0000FF', background: '#f0f0f5', highlight: { border: '#0000FF', background: '#f0f0f5' } }, font: { color: '#0033cc', size: 24, face: 'Angsana New' } },
@@ -55,6 +55,10 @@ export class TestGraphComponent implements OnInit {
       { id: '04-07', label: 'EdPEx', fixed: true, x: 900, y: 300, shape: 'box', color: { border: '#0000FF', background: '#f0f0f5', highlight: { border: '#0000FF', background: '#f0f0f5' } }, font: { color: '#0033cc', size: 24, face: 'Angsana New' } },
       { id: '04-08', label: 'ความปลอดภัย', fixed: true, x: 770, y: 380, shape: 'box', color: { border: '#0000FF', background: '#f0f0f5', highlight: { border: '#0000FF', background: '#f0f0f5' } }, font: { color: '#0033cc', size: 24, face: 'Angsana New' } },
     ]);
+
+    var nodeGroups = {
+      
+    };
 
     var edges = new DataSet([
       { from: '1', to: '2' },
@@ -80,7 +84,7 @@ export class TestGraphComponent implements OnInit {
       { from: '02-01', to: '02-01-04' },
       { from: '02-01-04', to: '02-01-04-01' },
       { from: '02-01-04-01', to: '02-01-04-01-01' },
-      { from: '02-01-04', to: '02-01-04-02' },
+      { from: '02-01-04', to: '02-01-04-02', dashes: true },
       { from: '03', to: '03-01' },
       { from: '03-01', to: '03-01-01' },
       { from: '03-01-01', to: '02-01-04-01-01' },
@@ -90,43 +94,8 @@ export class TestGraphComponent implements OnInit {
       { from: '04-03', to: '04-04' },
     ]);
 
-    var container = document.getElementById("mynetwork")!;
-
-    var options = {
-      physics: {
-        enabled: false,
-        stabilization: true
-      },
-      nodes: {
-        fixed: false,
-        widthConstraint: {
-          minimum: 50,
-          maximum: 150
-        }
-      },
-      edges: {
-        arrows: {
-          to: {
-            enabled: true,
-            scaleFactor: 0.5
-          }
-        }
-      },
-    };
-
-    var data = {
-      nodes: nodes,
-      edges: edges,
-    };
-
     this.graphData["nodes"] = nodes;
     this.graphData["edges"] = edges;
-
-    var network = new Network(container, data, options);
-
-    network.on("click", function (properties) {
-      console.log(properties.nodes);
-    });
 
   }
 

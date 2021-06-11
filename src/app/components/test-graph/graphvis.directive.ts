@@ -31,6 +31,11 @@ export class GraphVisDirective {
           }
         }
       },
+      groups: {
+        mainNodes:{
+          color: { border: '#ff0000', background: '#ffcccc', highlight: { border: '#cc0088', background: '#ffcccc' } }, font: { color: '#660066', size: 30, face: 'Angsana New' }, margin:{ top: 15, right: 15, left: 15, bottom: 15}
+        },
+      },
     };
 
     if(!this.network){
