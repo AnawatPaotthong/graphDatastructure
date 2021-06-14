@@ -124,7 +124,13 @@ export class GraphVisDirective {
               color: '#0033cc',
               size: 20,
               face: 'TH SarabunPSK'
-            }
+            },
+            margin: {
+              top: 15,
+              right: 15,
+              left: 15,
+              bottom: 15
+            },
         }
       }
     };
