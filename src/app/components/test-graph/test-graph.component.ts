@@ -56,10 +56,6 @@ export class TestGraphComponent implements OnInit {
       { id: '04-08', label: 'ความปลอดภัย', fixed: true, x: 770, y: 380, shape: 'box', group: 'bottomNodes' },
     ]);
 
-    var nodeGroups = {
-      
-    };
-
     var edges = new DataSet([
       { from: '1', to: '2' },
       { from: '01', to: '01-01', arrows: "to" },
